@@ -35,3 +35,5 @@
 
     
 6.  Difference between revert and reset. 
+=>  These commands are used to undo changes in git. 
+    git reset basically means to undo the local changes to the state of GIT repository. We can recover a deleted file after using reset whereas git revert undo's an entire commit from way back. Revert command creates a new commit in order to undo changes made by some other commits.
