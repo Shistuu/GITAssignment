@@ -5,8 +5,13 @@
 
 
 2.  How to find the difference between two commits?
+    Commits are done time to time in a file. So inorder to find the difference between two commits, we can use the command 
+    git log 
+    It shows all the logs of the commit which has different SHA codes. The latest commit has a Head as main. 
 
-
+    In order to show all the commits and the updates in shorter form we can use 
+    git log --oneline 
+    We can find the difference between them from the code that comes after the commit message or before the commit message, which is knwon as SHA code. We can track updates using that code too.
 
 
 
@@ -36,4 +41,7 @@
     
 6.  Difference between revert and reset. 
 =>  These commands are used to undo changes in git. 
-    git reset basically means to undo the local changes to the state of GIT repository. We can recover a deleted file after using reset whereas git revert undo's an entire commit from way back. Revert command creates a new commit in order to undo changes made by some other commits.
+    git reset basically means to undo the local changes to the state of GIT repository. We can recover a deleted file after using reset whereas git revert undo's an entire commit from way back. Revert command creates a new commit in order to undo changes made by some other commits.  We can do it by 
+
+    git revert "The SHA CODE" or 
+    git reset "filename.txt"
