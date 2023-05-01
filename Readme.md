@@ -45,3 +45,14 @@
 
     git revert "The SHA CODE" or 
     git reset "filename.txt"
+
+
+
+    ASSIGNMENT-II 
+1.  Write the difference between fetch and pull command.
+git fetch command is used to get data from the remote projects which  pulls the data to the local repository but it won't merge automatically whereas 
+
+git pull origin master command is used to pull will fetch and automatically merge the remote changes.
+
+2.  How to handle merge conflicts?
+Merge conflicts happen during merging and to solve the conflict, we fix it and once we do that we have to do is run ‘git add’ on the file to re-stage it, which marks it as resolved. Then commit the merge OR, create a Pull Request in GitHub.
